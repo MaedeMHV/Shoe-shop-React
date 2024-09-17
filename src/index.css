@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Nunito Sans Variable", sans-serif;
+}
+
+.Hamburger {
+  @apply p-3 focus:ring-1 focus:ring-stone-300 md:hidden flex  rounded-lg;
+}
+.Nav {
+  @apply flex flex-row justify-between items-center flex-wrap z-50;
+}
+.Menu_nav {
+  @apply flex flex-col md:flex-row md:gap-9 ;
+}
+.bigShoe {
+  @apply transition;
+  animation: bounce 4s ease-in-out infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.ShoeBackground {
+  @apply w-full h-fit py-16 pt-24 md:-mt-44;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    159deg,
+    #4158d0 0%,
+    #c850c0 14%,
+    #ffcc70 32%,
+    #5ed6b5 100%
+  );
+}
+h1 {
+  @apply text-5xl md:text-9xl font-black mt-6 dark:text-white;
+}
+
+h2 {
+  @apply text-3xl font-bold md:text-6xl dark:text-white;
+}
+.Btn1 {
+  @apply bg-black text-white py-4 px-10 active:scale-[0.9] dark:bg-white dark:text-black active:bg-slate-800;
+}
+p {
+  @apply text-xl mt-1 dark:text-white;
+}
